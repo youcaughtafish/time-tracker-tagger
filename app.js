@@ -1,6 +1,9 @@
 var React = require('react'); 
-var TagBox = require('./views/tagbox.jsx');
+var NewTagBox = require('./views/newtagbox.jsx');
+var $ = require('jquery');
 
-var data = JSON.parse(document.getElementById('initial-data').getAttribute('data-json'));
-
-React.render(<TagBox data={data} />, document.getElementById('app'));
+$(document).ready(function() {
+  $.get('/data/initial-data', function(data) {
+    React.render(<NewTagBox data={data} />, document.getElementById('app'));
+  });
+});

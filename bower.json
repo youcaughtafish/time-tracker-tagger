@@ -1,0 +1,17 @@
+{
+  "name": "time-tracker-tagger",
+  "version": "0.0.1",
+  "authors": [
+    "Dylan Moore <dzmoore@gmail.com>"
+  ],
+  "main": "program.js",
+  "license": "MIT",
+  "homepage": "http://dylanmooresoftware.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
